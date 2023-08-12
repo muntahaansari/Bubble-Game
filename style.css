@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #941C2F;
+}
+
+.panel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.ptop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    height: 12.25%;
+    background-color: #03191E;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    border: 2px solid #fff;
+    padding: 2px 4px 2px 0;
+    border-radius: 15px;
+}
+
+.logo-icon{
+    font-size: 6vh;
+    color: #941C2F;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    font-weight: 900;
+}
+
+.logo-res{
+    display: none   ;
+}
+
+@media (max-width: 700px) {
+    .main{
+        flex-direction: column;
+    }
+    .panel{
+        height: 71%;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-responsive{
+        position: absolute;
+        top: 0;
+        margin-top: 1vh;
+    }
+    .logo-res{
+        padding: 2px 4px 2px 0;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    }
+    .logo-icon-res{
+        font-size: 6vh;
+        color: #fff;
+    }
+    .logo-text-res{
+        display: flex;
+        flex-direction: column;
+        font-size: 3vh;
+        font-weight: 900;
+        color: #fff;
+    }
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elem h2{
+    font-size: 4vh;
+}
+
+.box{
+    background-color: #fff;
+    color: #941C2F;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .elem{
+        flex-direction: column;
+        gap: 0;
+    }
+    .elem h2{
+        font-size: 3vh;
+    }
+    .box{
+        padding: 1px 3px;
+    }
+}
+
+.pbtm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 87.75%;
+}
+
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 6vh;
+    background-color: #941C2F;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+.bubble:hover{
+    background-color: #711523;
+    cursor: pointer;
+}
+
+.pbtm h1{
+    font-size: 6vh;
+}
+
+.restart button{
+    position: absolute;
+    bottom: 1vh;
+    right: 42.5vw;
+
+    /* margin-left: 2vh; */
+    background-color: white;
+    color: #711523;
+    border: 0;
+    height: 8vh;
+    width: 15vw;
+    font-size: 3vh;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.restart button:hover{
+    cursor: pointer;
+    background-color: #e4c7c7;
+}
+
+.restart button:active{
+    border: 2px dashed #03191E;
+}
+
+
+@media (max-width: 700px) {
+    .restart button{
+        position: absolute;
+        bottom: 3vh;
+        right: 35vw;
+        height: 10vh;
+        width: 30vw;
+        margin-left: 0;
+        margin-top: 2vh;
+    }
+}

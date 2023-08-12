@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="logo-responsive">
+            <div class="logo-res">
+                <div class="logo-icon-res">
+                    <i class="ri-bubble-chart-line"></i>
+                </div>
+                <div class="logo-text-res">
+                    <div>Bubble</div>
+                    <div>Game</div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="ptop">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="ri-bubble-chart-line"></i>
+                    </div>
+                    <div class="logo-text">
+                        <div>Bubble</div>
+                        <div>Game</div>
+                    </div>
+                </div>
+                <div class="elem">
+                    <h2>Hit</h2>
+                    <div id="hitval" class="box">0</div>
+                </div>
+
+                <div class="elem">
+                    <h2>Timer</h2>
+                    <div id="timerval" class="box">60</div>
+                </div>
+
+                <div id="score" class="elem">
+                    <h2>Score</h2>
+                    <div id="scoreval" class="box">0</div>
+                </div>
+            </div>
+
+            <div class="pbtm">
+            </div>
+    </div>
+
+    <div class="restart">
+        <button onclick="window.location.reload()">restart game</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
